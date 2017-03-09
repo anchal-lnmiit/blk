@@ -1,5 +1,6 @@
 import java.util.*;
 class Test1{
+	String abc = "abc";
 	public static void main(String[] args) {
 		String out = "";
 		ArrayList<String> ai = new ArrayList<String>();
@@ -24,6 +25,17 @@ class Test1{
 			
 		}
 		System.out.println(out);
+		
+	}
+}
+class happyLoser {
+	String text;
+	
+	public void method1() {
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		}
+	
+	happyLoser() {
 		
 	}
 }
