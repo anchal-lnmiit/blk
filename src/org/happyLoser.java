@@ -1,17 +1,26 @@
+package org;
 import java.util.*;
-class Test1{
-	String abc = "abc";
-	public static void main(String[] args) {
-		String out = "";
+
+public class happyLoser{
+	
+	public String abc = "abc";
+	public String out = "";
+	public String arg1 = "I am working";
+	public static void main(String args[]) {
+		happyLoser hp = new happyLoser();
+		hp.imp();
+	}
+	public void imp() {
+		
 		ArrayList<String> ai = new ArrayList<String>();
 		while(true) {
 			int flag = 0;
 			for (int i = 0; i < 3; i++) {
-				StringBuilder input = new StringBuilder(args[i]);
-				if(args[i].length() > 0) {
+				StringBuilder input = new StringBuilder(arg1);
+				if(arg1.length() > 0) {
 					ai.add(Character.toString(input.charAt(0)));
 					input.deleteCharAt(0);
-					args[i] = input.toString();
+					arg1 = input.toString();
 					flag = 1;
 				}
 			}
@@ -27,15 +36,5 @@ class Test1{
 		System.out.println(out);
 		
 	}
-}
-class happyLoser {
-	String text;
 	
-	public void method1() {
-		ArrayList<Integer> al = new ArrayList<Integer>();
-		}
-	
-	happyLoser() {
-		
-	}
 }
